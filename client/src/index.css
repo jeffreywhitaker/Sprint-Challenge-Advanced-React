@@ -26,3 +26,11 @@
   color: #fff;
   background-color: #313843;
 }
+
+.soccerCard {
+  background: lightpink;
+  width: 200px;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 20px;
+}

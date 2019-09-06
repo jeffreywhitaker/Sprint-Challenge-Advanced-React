@@ -11,12 +11,16 @@ const Navbar = () => {
   }
 
   return (
+      <>
       <div className="dark-mode__toggle">
         <div
           onClick={toggleMode}
           className={darkMode ? 'toggle toggled' : 'toggle'}
+          data-testid="darkToggleButton"
         />
       </div>
+      <h2>Jeff's Soccer Cards</h2>
+      </>
   )
 }
 

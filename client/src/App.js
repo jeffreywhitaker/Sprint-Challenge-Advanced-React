@@ -23,12 +23,9 @@ export default class App extends React.Component {
     return (
       <>
       <NavBar />
-      <div className="App">
-        <h2>Jeff's Soccer Card</h2>
-        {this.state.soccerPlayers.map( (player) => {
-          return <SoccerCardsMaker key={player.id} player={player} />
-        })}
-      </div>
+      {this.state.soccerPlayers.map( (player) => {
+        return <SoccerCardsMaker key={player.id} player={player} />
+      })}
       </>
     )
   }
